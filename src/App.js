@@ -9,9 +9,19 @@ function App() {
     return ( <
         div >
         <
-        Navbar > < /Navbar> <Home> </Home > < CharacterDetail > < /CharacterDetail> <
-        About > < /About> <
+        Navbar >
+        <
+        /Navbar>  <
+        Home >
+        <
+        /Home>  <
+        CharacterDetail >
+        <
+        /CharacterDetail> <
+        About >
+        <
+        /About> <
         /div>
-    );
+    )
 }
 export default App;

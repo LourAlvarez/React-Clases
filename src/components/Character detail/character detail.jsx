@@ -30,13 +30,13 @@ export default class CharacterDetail extends React.Component{
                         </option>
                     ))}
                 </select>
-                <h2>{`Nombre del Personaje: ${this.state.detail.name}`}</h2>
-                <h2>{`Apellido del Personaje: ${this.state.detail.lastname}`}</h2>
                 <img className='imgCard' src={this.state.detail.photo}></img>
-                    <div>{`Edad del Personaje: ${this.state.detail.age}`}</div>                
-                    <div>{`Amigos del Personaje: ${this.state.detail.Friends}`}</div>
-                    <div>{`Ocupación del personaje: ${this.state.detail.Occupation}`}</div>
-                    <div>{`ciudad: ${this.state.detail.City}`}</div>
+                    <div>{`Nombre: ${this.state.detail.name}`}</div>
+                    <div>{`Apellido: ${this.state.detail.lastname}`}</div>
+                    <div>{`Edad: ${this.state.detail.age}`}</div>                
+                    <div>{`Amigos: ${this.state.detail.Friends}`}</div>
+                    <div>{`Ocupación: ${this.state.detail.Occupation}`}</div>
+                    <div>{`Ciudad: ${this.state.detail.City}`}</div>
                     
             </div>
         )

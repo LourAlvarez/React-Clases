@@ -1,0 +1,57 @@
+{
+    "Characters": [{
+            "id": 1,
+            "name": "Ash",
+            "lastname": "Ketchum",
+            "age": "10 años",
+            "photo": "https://depor.com/resizer/fnVdoiY8CgzqaIKeL2cuW6VIZ9A=/580x330/smart/filters:format(jpeg):quality(75)/cloudfront-us-east-1.images.arcpublishing.com/elcomercio/V5IPD7PZFJE7ZA6BPHCWRC3N4U.jpg",
+            "Occupation": "entrenador Pokémon",
+            "Friends": "Misty",
+            "City": "Pueblo Paleta"
+        },
+        {
+            "id": 2,
+            "name": "Misty",
+            "lastname": "Misty",
+            "age": "10 años",
+            "photo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTh5Q7DX8hh53JyYQYA8qxrGoVpUENQ865aqw&usqp=CAU",
+            "Occupation": " líder del Gimnasio Celeste",
+            "Friends": "Brock",
+            "City": " Ciudad Celeste"
+        },
+
+        {
+            "id": 3,
+            "name": "Brock ",
+            "lastname": "Brock ",
+            "age": "10 años",
+            "photo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQEG4GQZfwrwk9t59rTtxJobLBkU_YM_1_8APAub3gsj015u8Zk3TMtZa2WTIKYxaxyq6M&usqp=CAU",
+            "Occupation": " criador Pokémon",
+            "Friends": "Ash",
+            "City": " Ciudad Plateada"
+        },
+
+        {
+            "id": 4,
+            "name": "Tracey",
+            "lastname": "Sketchit",
+            "age": "10 años",
+            "photo": "https://noticiast.com/wp-content/uploads/2021/05/Pokemon-Journeys-comparte-nueva-actualizacion-sobre-Tracey.jpeg",
+            "Occupation": " observador y dibujante Pokémon ",
+            "Friends": "Misty",
+            "City": "Archipiélago Naranja"
+        },
+
+        {
+            "id": 5,
+            "name": "May",
+            "lastname": "Aura",
+            "age": "10 años",
+            "photo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR1IE62z11MeCkZZq-4kMmIoWtymBMUNI2ixg&usqp=CAU",
+            "Occupation": " observador y dibujante Pokémon ",
+            "Friends": "Misty",
+            "City": "líder del Gimnasio Petalburgo/Petalia"
+        }
+
+    ]
+}

@@ -4,24 +4,47 @@ import Navbar from "./components/NavBar/navbar";
 import About from "./components/About/about";
 import Home from "./components/Home/home";
 import CharacterDetail from "./components/Character detail/character detail";
+import Characters from './resources/data/characters.json';
+import React from "react";
+import { Switch, Route } from 'react-router-dom';
+import { useState } from 'react';
+import { useEffect } from 'react';
+import Character from "./components/Home/character";
 
 function App() {
+    const [characterInfo, setCharacterInfo] = useState([]);
+    useEffect(() => {
+        setCharacterInfo(Characters.Characters)
+    }, []);
     return ( <
         div >
         <
-        Navbar >
+        Navbar > < /Navbar>    <
+        Switch >
         <
-        /Navbar>  <
-        Home >
+        Route exact path = "/" >
         <
-        /Home>  <
-        CharacterDetail >
+        Home characterInfo = { characterInfo }
+        /> < /
+        Route > <
+        Route exact path = "/characterDetail" >
         <
-        /CharacterDetail> <
-        About >
+        CharacterDetail characterInfo = { characterInfo }
+        /> < /
+        Route > <
+        Route exact path = "/characterDetail/:id" >
         <
-        /About> <
+        Character characterInfo = { characterInfo }
+        /> < /
+        Route > <
+        Route path = "/about" >
+        <
+        About / >
+        <
+        /Route> < /
+        Switch > <
         /div>
     )
 }
+
 export default App;

@@ -1,19 +1,14 @@
 import React from "react";
 import './character.css';
-export default class Character extends React.Component{
-    constructor(props){
-        super()
-    }
-    render(){
+export default function Character(props){
         return(
             <div className='character'>
                <div>
-               <h3>{this.props.name}</h3>
+               <h3>{props.name}</h3>
                </div>
                <div>
-               <img className='imagen' src={this.props.url}></img>
+               <img className='imagen' src={props.url}></img>
                </div>
             </div>
         )
-    }
 }

@@ -1,6 +1,5 @@
 import React from "react";
 import Characters from "../../resources/data/characters.json"
-
 export default class CharacterDetail extends React.Component{
     constructor(props){
         super()

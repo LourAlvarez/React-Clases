@@ -5,7 +5,7 @@
             "lastname": "Ketchum",
             "age": "10 años",
             "photo": "https://depor.com/resizer/fnVdoiY8CgzqaIKeL2cuW6VIZ9A=/580x330/smart/filters:format(jpeg):quality(75)/cloudfront-us-east-1.images.arcpublishing.com/elcomercio/V5IPD7PZFJE7ZA6BPHCWRC3N4U.jpg",
-            "Occupation": "entrenador Pokémon",
+            "Occupation": "Entrenador Pokémon",
             "Friends": "Misty",
             "City": "Pueblo Paleta"
         },
@@ -51,6 +51,58 @@
             "Occupation": " observador y dibujante Pokémon ",
             "Friends": "Misty",
             "City": "líder del Gimnasio Petalburgo/Petalia"
+        },
+        {
+            "id": 6,
+            "name": "Jessie",
+            "lastname": "Musashi",
+            "age": "25 años",
+            "photo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS1Axr1FLd_uh_K4fjFGRevlSjNYzAAM1JmQg&usqp=CAU",
+            "Occupation": "Coordinadora Pokémon",
+            "Friends": "James",
+            "City": " Kanto"
+        },
+        {
+            "id": 7,
+            "name": "James",
+            "lastname": "Kojirō",
+            "age": "25 años",
+            "photo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRJZAy6RdvGx4pmkmcvtjsOmIzFAxaImzqOHQ&usqp=CAU",
+            "Occupation": "Agente del Team Rocket",
+            "Friends": "Jessie",
+            "City": "Kanto"
+        },
+        {
+            "id": 8,
+            "name": "Serena",
+            "lastname": "Serena",
+            "age": "16 años",
+            "photo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS9RWdGh0v_QTC8l3rvMi-3LmuqGd1W-XPwRQ&usqp=CAU",
+            "Occupation": "Artista/Estrella Pokémon",
+            "Friends": "Ash",
+            "City": " Kalos"
+        },
+
+        {
+            "id": 9,
+            "name": "Clemont",
+            "lastname": "Citron",
+            "age": "11 años",
+            "photo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSLCHxxCkDhlTMrHakEyWMnVHY3q9HS7YqosQ&usqp=CAU",
+            "Occupation": " Líder del gimnasio de Ciudad Luminalia,",
+            "Friends": "Serena",
+            "City": " Kalos"
+        },
+
+        {
+            "id": 10,
+            "name": " Profesor Samuel",
+            "lastname": "Oak",
+            "age": "50 años",
+            "photo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQI4jyhxva9WetEHjR6km1xxwA6BcKDXtZpkQ&usqp=CAU",
+            "Occupation": " Profesor Pokémon",
+            "Friends": "Ash",
+            "City": "Kanto"
         }
 
     ]

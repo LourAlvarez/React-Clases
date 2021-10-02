@@ -1,5 +1,6 @@
 import React from "react";
 import "./navbar.css";
+import { Link, NavLink } from "react-router-dom";
 export default class NavBar extends React.Component {
   constructor() {
     super();
@@ -10,13 +11,20 @@ export default class NavBar extends React.Component {
       <div>
         <ul>
           <li>
-            <a class="active" >WIKI-POKEMON</a>
+            <a>
+            <NavLink exact to="/" className="a" class="active" >WIKI-POKEMON</NavLink>
+            </a>
           </li>
           <li>
-            <a href="#">Character Detail</a>
+            <a>
+            <NavLink exact to="/characterDetail" className="a" >Character Detail</NavLink>
+            </a>
+           
           </li>
           <li>
-            <a href="#">About</a>
+            <a>
+              <NavLink exact to="/about" className="a">About</NavLink>
+            </a>
           </li>
         </ul>
       </div>

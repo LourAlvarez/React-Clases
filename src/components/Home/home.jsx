@@ -1,6 +1,5 @@
 import React from "react";
 import {NavLink} from "react-router-dom";
-import './home.css';
 import Character from "./character";
 import Characters from '../../resources/data/characters.json'
 export default class Home extends React.Component{

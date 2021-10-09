@@ -1,4 +1,5 @@
 import React from "react";
+import ControlledForm from "../Forms/controlledForm";
 import './about.css';
 export default function About(){
       return(
@@ -12,6 +13,7 @@ export default function About(){
           <p>
             <a>Email: lourdes.aa088@gmail.com</a>
           </p>
+          <ControlledForm/>
         </div>
       )
 }

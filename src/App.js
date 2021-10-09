@@ -10,6 +10,7 @@ import { Switch, Route } from 'react-router-dom';
 import { useState } from 'react';
 import { useEffect } from 'react';
 import Character from "./components/Home/character";
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 function App() {
     const [characterInfo, setCharacterInfo] = useState([]);
@@ -17,14 +18,15 @@ function App() {
         setCharacterInfo(Characters.Characters)
     }, []);
     return ( <
-        div >
+        div className = "App" >
         <
         Navbar > < /Navbar>    <
         Switch >
         <
         Route exact path = "/" >
         <
-        Home characterInfo = { characterInfo }
+        Home className = "App"
+        characterInfo = { characterInfo }
         /> < /
         Route > <
         Route exact path = "/characterDetail" >

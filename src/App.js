@@ -1,52 +1,56 @@
-import logo from "./logo.svg";
-import "./App.css";
-import Navbar from "./components/NavBar/navbar";
-import About from "./components/About/about";
-import Home from "./components/Home/home";
-import CharacterDetail from "./components/Character detail/character detail";
-import Characters from './resources/data/characters.json';
 import React from "react";
-import { Switch, Route } from 'react-router-dom';
-import { useState } from 'react';
-import { useEffect } from 'react';
-import Character from "./components/Home/character";
-import 'bootstrap/dist/css/bootstrap.min.css';
+import "./App.css";
+import NavBar from "./components/NavBar/navbar";
+import Home from "./components/Home/home";
+import About from "./components/About/about";
+import Characters from "./resources/data/characters.json";
+import CharacterDetail from "./components/Character detail/character detail";
+import Character from "./components/Character detail/characterInfo";
+import { useEffect } from "react";
+import { useState } from "react";
+import { Switch } from "react-router-dom";
+import { Route } from "react-router-dom";
 
 function App() {
-    const [characterInfo, setCharacterInfo] = useState([]);
+    const [CharacterInfo, setCharacterInfo] = useState([]);
+
     useEffect(() => {
-        setCharacterInfo(Characters.Characters)
-    }, []);
+        setCharacterInfo(Characters.Characters);
+    });
+
     return ( <
         div className = "App" >
         <
-        Navbar > < /Navbar>    <
+        NavBar / >
+        <
         Switch >
         <
-        Route exact path = "/" >
+        Route path = "/"
+        exact >
         <
-        Home className = "App"
-        characterInfo = { characterInfo }
-        /> < /
-        Route > <
-        Route exact path = "/characterDetail" >
+        Home charactersInfo = { CharacterInfo }
+        /> <
+        /Route> <
+        Route path = "/characterDetail"
+        exact >
         <
-        CharacterDetail characterInfo = { characterInfo }
-        /> < /
-        Route > <
+        CharacterDetail charactersInfo = { CharacterInfo }
+        /> <
+        /Route> <
         Route exact path = "/characterDetail/:id" >
         <
-        Character characterInfo = { characterInfo }
-        /> < /
-        Route > <
-        Route path = "/about" >
+        Character charactersInfo = { CharacterInfo }
+        /> <
+        /Route> <
+        Route path = "/about"
+        exact >
         <
         About / >
         <
-        /Route> < /
-        Switch > <
+        /Route> <
+        /Switch> <
         /div>
-    )
+    );
 }
 
 export default App;

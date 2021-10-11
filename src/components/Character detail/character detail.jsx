@@ -1,43 +1,39 @@
 import React from "react";
-import Characters from "../../resources/data/characters.json"
-export default class CharacterDetail extends React.Component{
-    constructor(props){
-        super()
-        this.state = {
-            detail: Characters.Characters[0]
-        };
-    }
+import {useEffect} from 'react';
+import {useState} from 'react';
+import Characters from '../../resources/data/characters.json'
 
-    Detalles(event){
-        Characters.Characters.map((element)=> {
-            if(element.name===event.target.value){
-                console.log(element.name)
-                this.setState(()=>{
-                    return {detail: element}
-                })
-            }
-        })
-    }
+export default function CharacterDetail(props){
 
-    render(){
+    const [CharacterlInfo, setCharacterInfo] = useState([]); 
+
+    useEffect(() => {
+        setCharacterInfo(Characters.Characters)
+    });
+
+    const [CharacterSelected, setCharacterSelected] = useState(Characters.Characters[0]); 
+
+    const mostrar = (event) =>{
+        setCharacterSelected(CharacterlInfo.find((element) => {
+            return element.name === event.target.value;
+        }))
+    }
+   
         return(
-            <div className="characters">
-                <select className="selectp" onChange={(event)=>{this.Detalles(event)}}> 
+            <div className="characterContainer">
+                <select  onChange={(event)=>{mostrar(event)}}> 
                     {Characters.Characters.map((element) =>(
-                        <option 
-                        value={element.name}>{element.name}
-                        </option>
+                        <option value={element.name}>{element.name}</option>
                     ))}
                 </select>
-                <img className='imgCard' src={this.state.detail.photo}></img>
-                    <div>{`Nombre: ${this.state.detail.name}`}</div>
-                    <div>{`Apellido: ${this.state.detail.lastname}`}</div>
-                    <div>{`Edad: ${this.state.detail.age}`}</div>                
-                    <div>{`Amigos: ${this.state.detail.Friends}`}</div>
-                    <div>{`Ocupación: ${this.state.detail.Occupation}`}</div>
-                    <div>{`Ciudad: ${this.state.detail.City}`}</div>
-                    
+                <img className='imgCard' src={CharacterSelected.photo}></img>
+                <div>{`Nombre: ${CharacterSelected.name}`}</div>
+                    <div>{`Apellido: ${CharacterSelected.lastname}`}</div>
+                    <div>{`Edad: ${CharacterSelected.age}`}</div>                
+                    <div>{`Occupation: ${CharacterSelected.Occupation}`}</div>
+                    <div>{`Friends: ${CharacterSelected.Friends}`}</div>
+                    <div>{`City: ${CharacterSelected.City}`}</div>
+                
             </div>
         )
     }
-}

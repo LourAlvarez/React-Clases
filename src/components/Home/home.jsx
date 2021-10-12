@@ -7,22 +7,26 @@ export default class Home extends React.Component{
     constructor(props){
         super()
         this.state = {
-            c: Characters.Characters
+            c: Characters.Characters,
         };
     }
 
     render(){
         return (
             <div className='container'>
-            {this.state.c.map((element) => (
-            <Link to={`/characterDetail/${element.id}`}>
+            {this.state.c.map((element) => {
+                return (
+                    <Link exact 
+                    key={element.id}
+                    to={`/characterDetail/${element.id}`}>
                 <Cards
-                    name={element.name }
-                    url={element.photo}
+                    name={ element.name}
+                    url={ element.photo}
                 />
-            </Link>                
-            ))}                
+            </Link> 
+                )
+            })}                
             </div>
         )
     }
-}
+} 

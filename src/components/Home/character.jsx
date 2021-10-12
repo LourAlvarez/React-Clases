@@ -3,7 +3,7 @@ import { Card } from 'react-bootstrap';
 import { Row } from "react-bootstrap";
 import { Col } from "react-bootstrap";
 import 'bootstrap/dist/css/bootstrap.min.css';
-export default function Cards(props){
+const Cards = (props)=>{
      return( 
        <>
         <Row className=" container d-flex justify-content-center align-items-center h-90 ">
@@ -18,3 +18,4 @@ export default function Cards(props){
          </Row>
          </>
        )}
+export default Cards;

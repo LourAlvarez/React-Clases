@@ -15,7 +15,7 @@ function App() {
     const [CharacterInfo, setCharacterInfo] = useState([]);
 
     useEffect(() => {
-        setCharacterInfo(Characters.Characters);
+        setCharacterInfo([...Characters.Characters]);
     });
 
     return ( <
@@ -29,26 +29,26 @@ function App() {
         exact >
         <
         Home charactersInfo = { CharacterInfo }
-        /> <
-        /Route> <
+        /> < /
+        Route > <
         Route path = "/characterDetail"
         exact >
         <
         CharacterDetail charactersInfo = { CharacterInfo }
-        /> <
-        /Route> <
+        /> < /
+        Route > <
         Route exact path = "/characterDetail/:id" >
         <
         Character charactersInfo = { CharacterInfo }
-        /> <
-        /Route> <
+        /> < /
+        Route > <
         Route path = "/about"
         exact >
         <
         About / >
         <
-        /Route> <
-        /Switch> <
+        /Route> < /
+        Switch > <
         /div>
     );
 }

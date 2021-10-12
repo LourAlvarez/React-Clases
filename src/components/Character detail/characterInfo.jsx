@@ -1,23 +1,25 @@
 import React from "react";
-import Card from "../Home/character";
+import Cards from "../Home/character";
 import Characters from '../../resources/data/characters.json';
 import {  useParams } from "react-router";
 import { useHistory } from "react-router";
 
-export default function Character(props){
+const  Character = (props) => {
 
         const p = useParams();
-        const element = Characters.Characters.find((element) => element.code=== p.code);
+        const element=Characters.Characters.find((elemento) => elemento.id===parseInt(p.id))
         const history = useHistory();
         const volverHome = () => {
           history.push("/");
         };
         return (
-            <>
-              <Card
-                    name={element.name }
-                    url={element.photo}
+            <div>
+               
+               <Cards
+                    name={ element.name}
+                    url={ element.photo}
                 />
+            
             <button
             type="button"
             onClick={() => {
@@ -26,7 +28,8 @@ export default function Character(props){
           >
             Volver
           </button>
-        </>
+        </div>
         )
     
     }
+    export default Character;
